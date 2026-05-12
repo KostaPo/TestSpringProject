@@ -7,11 +7,18 @@ import java.util.Map;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
 public class TestController {
 
+    private final TimeService timeService;
+
+    public TestController(TimeService timeService) {
+        this.timeService = timeService;
+    }
+
     @GetMapping("/time")
     public Map<String, String> time() {
-        return Map.of("time", OffsetDateTime.now(ZoneOffset.UTC).toString());
+        return timeService.getCurrentTime();
     }
 }
