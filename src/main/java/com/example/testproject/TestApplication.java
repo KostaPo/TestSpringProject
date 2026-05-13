@@ -4,14 +4,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Punto de entrada de la aplicación Spring Boot.
+ * Точка входа в приложение Spring Boot.
  */
 @SpringBootApplication
 public class TestApplication {
     /**
-     * Método de inicio de la aplicación.
+     * Метод запуска приложения.
      *
-     * @param args argumentos de la línea de comandos
+     * @param args аргументы командной строки
      */
     public static void main(String[] args) {
         SpringApplication.run(TestApplication.class, args);
