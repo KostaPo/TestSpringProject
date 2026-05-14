@@ -7,15 +7,15 @@ import java.time.ZoneId;
 import java.util.Map;
 
 /**
- * Сервис для получения текущего времени.
+ * Servizio per ottenere l'ora corrente.
  */
 @Service
 public class TimeService {
 
     /**
-     * Возвращает карту с текущим временем.
+     * Restituisce una mappa con l'ora corrente.
      *
-     * @return карта, содержащая строковое представление текущего времени
+     * @return mappa contenente la rappresentazione testuale dell'ora corrente
      */
     public Map<String, String> getCurrentTime() {
         return Map.of("time", OffsetDateTime.now(ZoneId.of("Europe/Moscow")).toString());
