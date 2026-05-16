@@ -7,7 +7,7 @@ import java.util.Map;
 
 
 /**
- * REST-контроллер для получения текущего времени.
+ * REST controller for retrieving the current time.
  */
 @RestController
 public class TestController {
@@ -15,18 +15,18 @@ public class TestController {
     private final TimeService timeService;
 
     /**
-     * Конструктор контроллера.
+     * Controller constructor.
      *
-     * @param timeService Сервис времени для получения текущего времени
+     * @param timeService Time service for retrieving the current time
      */
     public TestController(TimeService timeService) {
         this.timeService = timeService;
     }
 
     /**
-     * Возвращает Map с текущим временем.
+     * Returns a Map with the current time.
      *
-     * @return Map, содержащий текущее время
+     * @return Map containing the current time
      */
     @GetMapping("/time")
     public Map<String, String> time() {
