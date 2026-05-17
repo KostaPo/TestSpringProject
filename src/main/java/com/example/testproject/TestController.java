@@ -28,7 +28,7 @@ public class TestController {
     /**
      * Возвращает Map с текущим временем.
      *
-     * @return Map, содержащий текущее время
+     * @return Map содержащий ключ "time" с текущим временем в формате строки.
      */
     @GetMapping("/time")
     public Map<String, String> time() {
