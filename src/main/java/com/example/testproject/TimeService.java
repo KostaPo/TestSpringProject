@@ -8,8 +8,6 @@ import java.util.Map;
 
 /**
  * Service for getting the current time.
- * @author AI Agent
- * @deprecated false
  * @see java.time.LocalDateTime
  */
 @Service

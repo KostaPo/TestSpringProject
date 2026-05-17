@@ -4,16 +4,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Точка входа для приложения Spring Boot.
- * @author AI Agent
- * @version 1.0
+ * Entry point for the Spring Boot application.
  */
 @SpringBootApplication
 public class TestApplication {
     /**
      * Основная точка входа приложения.
      *
-     * @param args Аргументы командной строки
+     * @param args Command line arguments
      */
     public static void main(String[] args) {
         SpringApplication.run(TestApplication.class, args);
