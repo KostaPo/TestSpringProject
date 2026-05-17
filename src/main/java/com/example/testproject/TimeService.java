@@ -8,6 +8,7 @@ import java.util.Map;
 
 /**
  * Сервис для получения текущего времени.
+ * @author AI Agent
  */
 @Service
 public class TimeService {
