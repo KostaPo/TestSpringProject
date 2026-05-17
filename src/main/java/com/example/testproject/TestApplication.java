@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Точка входа для приложения Spring Boot.
+ * @author AI Agent
+ * @version 1.0
  */
 @SpringBootApplication
 public class TestApplication {
