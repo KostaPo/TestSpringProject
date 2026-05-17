@@ -8,6 +8,8 @@ import java.util.Map;
 
 /**
  * REST-контроллер для получения текущего времени.
+ *
+ * @since 1.0
  */
 @RestController
 public class TestController {
