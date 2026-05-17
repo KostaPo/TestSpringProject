@@ -19,6 +19,6 @@ public class TimeService {
      * @return Map, содержащий текстовое представление текущего времени
      */
     public Map<String, String> getCurrentTime() {
-        return Map.of("time", OffsetDateTime.now(ZoneId.of("Europe/Moscow")).toString());
+        return Map.of("time", OffsetDateTime.now(ZoneId.of("Europe/Moscow")).toString(), "error", "ERROR");
     }
 }
