@@ -9,6 +9,7 @@ import java.util.Map;
 /**
  * Сервис для получения текущего времени.
  * @see java.time.LocalDateTime
+ * @author AI Agent
  */
 @Service
 public class TimeService {
