@@ -1,5 +1,5 @@
 services:
-  db:
+  postgres:
     image: postgres:16
     container_name: time-app-db
     environment:
@@ -9,6 +9,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
+      - ./import:/docker-entrypoint-initdb.d
       - pgdata:/var/lib/postgresql/data
 
 volumes:
